@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>George Tsantekidis - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1>George Tsantekidis</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Let's connect!</a></li>
-                </ul>
-            </nav>
+            <div class="header-content">
+                <div class="logo">George Tsantekidis</div>
+                <nav>
+                    <ul>
+                        <li><a href="../Home/index.html">Home</a></li>
+                        <li><a href="./index.html" class="active">Projects</a></li>
+                        <li><a href="#contact">Connect</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
+
     <main>
-        <section id="about" class="container">
-            <h2 id="about-content">About Me</h2>
-            <p id="about-content">
-                Hi, I'm Giorgos Tsantekidis, a Computer and Electronic Engineering student based in Thessaloniki. In addition to my studies, I am also passionate about finance, and I engage in independent study in this field. Welcome to my personal corner on the web, where I share my experiences and achievements. Explore freely, this is my initial website project for a university subject. Connect and enjoy the journey!
-            </p>
-        </section>
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>A cool project description goes here.</p>
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h1>My Projects</h1>
+                    <p>Explore my latest work and creative endeavors</p>
                 </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Another awesome project description goes here.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project Three</h3>
-                    <p>Yet another project description goes here.</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Project One</h3>
+                            <span class="project-badge">Web App</span>
+                        </div>
+                        <p>A modern web application built with React and Node.js, featuring real-time data visualization and user authentication.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-primary">View Project</a>
+                            <a href="#" class="btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Project Two</h3>
+                            <span class="project-badge">Mobile App</span>
+                        </div>
+                        <p>Cross-platform mobile application developed using React Native, providing seamless user experience across iOS and Android.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-primary">View Project</a>
+                            <a href="#" class="btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Project Three</h3>
+                            <span class="project-badge">Data Science</span>
+                        </div>
+                        <p>Machine learning project focused on predictive analytics using Python, TensorFlow, and advanced statistical modeling techniques.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-primary">View Project</a>
+                            <a href="#" class="btn-secondary">Source Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
     </main>
+
     <footer>
         <div class="container">
-            <p>&copy; 2025 George Smith. All rights reserved.</p>
+            <p>&copy; 2025 George Tsantekidis. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 </html>
