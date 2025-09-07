@@ -19,8 +19,8 @@
                 <nav>
                     <ul>
                         <li><a href="../Home/index.html">Home</a></li>
-                        <li><a href="./index.html" class="active">Portfolio</a></li>
-                        <!-- <li><a href="#contact">Connect</a></li> -->
+                        <li><a href="#portfolio" class="active">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </nav>
             </div>
@@ -28,136 +28,73 @@
     </header>
 
     <main>
-        <section id="portfolio" class="portfolio-sections">
-            <div class="container">
+        <div class="container">
+            <section class="top-section">
+                <h1>Portfolio</h1>
+            </section>
+
+            <section id="experience" class="experience-section">
                 <div class="section-header">
-                    <h1>Proffesional experience</h1>
-                    <p></p>
-                </div>
-
-                <div class="experience-grid">
-                    <div class="experience-card">
-                        <div class="experience-main">
-                            <div class="experience-header">
-                                <div>
-                                    <h3>Intern Data Engineer at <a href="https://www.exness.org/" style="color: gold;">Exness</a></h3>
-                                </div>
-                            </div>
-                            <p>
-                                I had a 7-month internship as a Data Engineer at Exness, a leading multi-asset financial
-                                broker. During my time there, I was introduced to various technologies, including Apache
-                                Kafka, Apache Flink, Kafka Connect, and Kubernetes. I worked on enhancing the testing
-                                framework for Apache Flink SQL jobs by refining existing logic in Java to ensure
-                                reliability, as well as implementing new features requested internally. Moreover, I
-                                helped
-                                with infrastructure migrations between Kubernetes clusters, using Terraform and related
-                                tools for provisioning. I was also actively involved in managing the Apache Kafka
-                                cluster,
-                                handling resources such as topics and ACLs to meet internal requirements.
-                            </p>
+                    <h2>Experience</h2>
+                </div>   
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="./images/exness-logo.png" alt="Company Logo" class="company-logo">
+                        <div>
+                            <h3>Junior Site Reliability Engineer (Internship)</h3>
+                            <p class="company-name"><a href="https://www.exness.org/" style="color: rgb(243, 207, 0);">Exness</a> | Jun 2025 – Aug 2025</p>
                         </div>
+                    </div>
+
+                    <p class="experience-description">
+                        Supported the production environment of the Real User Monitoring (RUM) system.
+                    <br>- Created dashboards and visualizations to monitor cardinality, reducing metric volume by 20%.
+                    <br>- Worked on the alerting system by leveraging existing alerts, implementing new ones for broader
+                          coverage, and ensuring alerts reliably reached the team.
+                    <br>- Prepared the migrations from AWS ECS to AWS EKS clusters
+                    </p>
+
+                    <div class="skills">
+                        <span>Kubernetes</span>
+                        <span>Helm</span>
+                        <span>Grafana</span>
+                        <span>Monitoring</span>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="portfolio" class="portfolio-sections">
-            <div class="container">
-                <div class="section-header">
-                    <h1>My Projects</h1>
-                    <p>Explore my latest work and creative endeavors</p>
-                </div>
-
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Cashly – Personal Finance & Investment Tracker</h3>
-                            <span class="project-badge">Android App</span>
-                        </div>
-                        <p>Cashly is a mobile app developed as part of a university project. </p>
-                        <div class="project-links">
-                            <!-- <a href="./Projects/Cashly/index.html" class="btn-primary">View Project</a> -->
-                            <a href="https://github.com/Tsandas/Cashly" class="btn-secondary">Source Code</a>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="./images/exness-logo.png" alt="Company Logo" class="company-logo">
+                        <div>
+                            <h3>Intern Data Engineer</h3>
+                            <p class="company-name"><a href="https://www.exness.org/" style="color: rgb(243, 207, 0);">Exness</a> | Jun 2024 – Dec 2024</p>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Hotel Management Project</h3>
-                            <span class="project-badge">Java FX</span>
-                        </div>
-                        <p>Developed as a university project to showcase fundamental skills in JavaFX and general
-                            programming.</p>
-                        <div class="project-links">
-                            <!-- <a href="./Projects/HotelManagement/index.html" class="btn-primary">View Project</a> -->
-                            <a href="https://github.com/Tsandas/HotelManagementProject" class="btn-secondary">Source
-                                Code</a>
-                        </div>
-                    </div>
+                    <p class="experience-description">
+                        I had a 7-month internship as a Data Engineer at Exness, a leading multi-asset financial broker.
+                        During my time there, I was introduced to various technologies, including Apache Kafka, Apache
+                        Flink, Kafka Connect, and Kubernetes. I worked on enhancing the testing framework for Apache
+                        Flink SQL jobs by refining existing logic in Java to ensure reliability, as well as implementing
+                        new features requested internally. Moreover, I helped with infrastructure migrations between
+                        Kubernetes clusters, using Terraform and related tools for provisioning. I was also actively
+                        involved in managing the Apache Kafka cluster, handling resources such as topics and ACLs to
+                        meet internal requirements.
+                    </p>
 
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>MQL5 Trading Bots</h3>
-                            <span class="project-badge">MQL5 - Finance</span>
-                        </div>
-                        <p>Simple trading bots and indicators developed in MQL5 for the MetaTrader 5 platform.</p>
-                        <div class="project-links">
-                            <!-- <a href="./Projects/TrafingBots/index.html" class="btn-primary">View Project</a> -->
-                            <a href="https://github.com/Tsandas/MQL5-Projects" class="btn-secondary">Source Code</a>
-                        </div>
+                    <div class="skills">
+                        <span>Java</span>
+                        <span>Terraform</span>
+                        <span>Apache Kafka</span>
+                        <span>Kubernetes</span>
+                        <span>Git</span>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="portfolio" class="portfolio-sections">
-            <div class="container">
-                <div class="section-header">
-                    <h1>My Projects</h1>
-                    <!-- <p>Explore my latest work and creative endeavors</p> -->
-                </div>
+            </section>
 
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>CySec Advanced</h3>
-                            <span class="project-badge">Finance</span>
-                        </div>
-                        <p>Financial regulation,<br> certificate number: CN8350</p>
-                        <div class="project-links">
-                            <img src="CySEC_Logo.jpg" alt="">
-                        </div>
-                    </div>
 
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Hotel Management Project</h3>
-                            <span class="project-badge">Java FX</span>
-                        </div>
-                        <p>Developed as a university project to showcase fundamental skills in JavaFX and general
-                            programming.</p>
-                        <div class="project-links">
-                            <!-- <a href="./Projects/HotelManagement/index.html" class="btn-primary">View Project</a> -->
-                            <a href="https://github.com/Tsandas/HotelManagementProject" class="btn-secondary">Source
-                                Code</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>MQL5 Trading Bots</h3>
-                            <span class="project-badge">MQL5 - Finance</span>
-                        </div>
-                        <p>Simple trading bots and indicators developed in MQL5 for the MetaTrader 5 platform.</p>
-                        <div class="project-links">
-                            <!-- <a href="./Projects/TrafingBots/index.html" class="btn-primary">View Project</a> -->
-                            <a href="https://github.com/Tsandas/MQL5-Projects" class="btn-secondary">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
 
     <footer>
