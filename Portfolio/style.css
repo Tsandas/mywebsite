@@ -131,11 +131,11 @@ footer {
     justify-content: flex-start;
 }
 
-.experience-section {
+.portfolio-section {
     margin-top: 0.1rem;
 }
 
-.experience-section h2 {
+.portfolio-section h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -144,7 +144,7 @@ footer {
     position: relative;
 }
 
-.experience-card {
+.portfolio-card {
     background: var(--white);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -154,12 +154,12 @@ footer {
     transition: all 0.3s ease;
 }
 
-.experience-card:hover {
+.portfolio-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
 
-.experience-header {
+.portfolio-header {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -167,8 +167,8 @@ footer {
 }
 
 .company-logo {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     border-radius: 8px;
     background: #fff;
@@ -181,7 +181,7 @@ footer {
     color: var(--text-light);
 }
 
-.experience-description {
+.portfolio-description {
     font-size: 1rem;
     margin-bottom: 1rem;
     color: var(--text);
@@ -201,6 +201,44 @@ footer {
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--primary-dark);
+    box-shadow: var(--shadow);
+}
+
+
+.projects-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(226, 232, 240, .8);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.projects-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.portfolio-text {
+    flex: 1 1 55%;
+}
+.portfolio-video {
+    flex: 1 1 40%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-video video {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
 

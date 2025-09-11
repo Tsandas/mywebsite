@@ -20,7 +20,7 @@
                     <ul>
                         <li><a href="../Home/index.html">Home</a></li>
                         <li><a href="#portfolio" class="active">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#about">About</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -33,26 +33,30 @@
                 <h1>Portfolio</h1>
             </section>
 
-            <section id="experience" class="experience-section">
+            <section id="portfolio" class="portfolio-section">
                 <div class="section-header">
                     <h2>Experience</h2>
-                </div>   
-                <div class="experience-card">
-                    <div class="experience-header">
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-header">
                         <img src="./images/exness-logo.png" alt="Company Logo" class="company-logo">
                         <div>
                             <h3>Junior Site Reliability Engineer (Internship)</h3>
-                            <p class="company-name"><a href="https://www.exness.org/" style="color: rgb(243, 207, 0);">Exness</a> | Jun 2025 – Aug 2025</p>
+                            <p class="company-name"><a href="https://www.exness.org/"
+                                    style="color: rgb(243, 207, 0);">Exness</a> | Jun 2025 – Aug 2025</p>
                         </div>
                     </div>
 
-                    <p class="experience-description">
-                        Supported the production environment of the Real User Monitoring (RUM) system.
-                    <br>- Created dashboards and visualizations to monitor cardinality, reducing metric volume by 20%.
-                    <br>- Worked on the alerting system by leveraging existing alerts, implementing new ones for broader
-                          coverage, and ensuring alerts reliably reached the team.
-                    <br>- Prepared the migrations from AWS ECS to AWS EKS clusters
+                    <p class="portfolio-description">
+                        Supported the production environment of the Real User Monitoring (RUM) system:
                     </p>
+                    <ul class="portfolio-description">
+                        <li>Created dashboards and visualizations to monitor cardinality, reducing metric volume by 20%.
+                        </li>
+                        <li>Worked on the alerting system by leveraging existing alerts, implementing new ones for
+                            broader coverage, and ensuring alerts reliably reached the team.</li>
+                        <li>Prepared the migrations from AWS ECS to AWS EKS clusters.</li>
+                    </ul>
 
                     <div class="skills">
                         <span>Kubernetes</span>
@@ -62,25 +66,29 @@
                     </div>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-header">
+                <div class="portfolio-card">
+                    <div class="portfolio-header">
                         <img src="./images/exness-logo.png" alt="Company Logo" class="company-logo">
                         <div>
                             <h3>Intern Data Engineer</h3>
-                            <p class="company-name"><a href="https://www.exness.org/" style="color: rgb(243, 207, 0);">Exness</a> | Jun 2024 – Dec 2024</p>
+                            <p class="company-name"><a href="https://www.exness.org/"
+                                    style="color: rgb(243, 207, 0);">Exness</a> | Jun 2024 – Dec 2024</p>
                         </div>
                     </div>
 
-                    <p class="experience-description">
+                    <p class="portfolio-description">
                         I had a 7-month internship as a Data Engineer at Exness, a leading multi-asset financial broker.
-                        During my time there, I was introduced to various technologies, including Apache Kafka, Apache
-                        Flink, Kafka Connect, and Kubernetes. I worked on enhancing the testing framework for Apache
-                        Flink SQL jobs by refining existing logic in Java to ensure reliability, as well as implementing
-                        new features requested internally. Moreover, I helped with infrastructure migrations between
-                        Kubernetes clusters, using Terraform and related tools for provisioning. I was also actively
-                        involved in managing the Apache Kafka cluster, handling resources such as topics and ACLs to
-                        meet internal requirements.
+                        During my time there, I worked with various technologies, including Apache Kafka, Apache Flink,
+                        Kafka Connect, and Kubernetes:
                     </p>
+                    <ul class="portfolio-description">
+                        <li>Enhanced the testing framework for Apache Flink SQL jobs by refining existing logic in Java
+                            to ensure reliability and implementing new features requested internally.</li>
+                        <li>Contributed to infrastructure migrations between Kubernetes clusters, using Terraform and
+                            related tools for provisioning.</li>
+                        <li>Actively managed the Apache Kafka cluster, handling resources such as topics and ACLs to
+                            meet internal requirements.</li>
+                    </ul>
 
                     <div class="skills">
                         <span>Java</span>
@@ -93,8 +101,123 @@
 
             </section>
 
+            <section id="portfolio" class="portfolio-section">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="projects-card">
+                    <div class="portfolio-content">
+                        <div class="portfolio-text">
+                            <div class="portfolio-header">
+                                <img src="./images/cashly_logo.png" alt="Company Logo" class="company-logo">
+                                <div>
+                                    <h3><a href="https://github.com/Tsandas/Cashly" target="_blank"
+                                            style="color: seagreen;">Cashly</a></h3>
+                                    <p class="company-name">May 2025</p>
+                                </div>
+                            </div>
+
+                            <p class="portfolio-description">
+                                Cashly is a university project mobile app for personal finance and investments. It lets
+                                users track expenses, manage a basic stock portfolio, and sync data with Firebase
+                                Firestore.
+                            </p>
+                            <h4>Features:</h4>
+                            <ul class="portfolio-description">
+                                <li>Daily expense logging
+                                <li>Stock portfolio tracking (end-of-day prices, limited stocks)</li>
+                                <li>Firebase Authentication for user accounts</li>
+                                <li>Cloud sync with Firestore</li>
+                                <li>Offline transaction support with Room Database</li>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio-video">
+                            <video controls>
+                                <source src="./videos/cashly-demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <span>Kotlin</span>
+                        <span>ROOM DB</span>
+                        <span>Firestore</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="portfolio" class="portfolio-section">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                </div>
+
+                <div class="projects-card">
+                    <div class="portfolio-content">
+                        <div class="portfolio-text">
+                            <div class="portfolio-header">
+
+                                <div class="portfolio-header">
+                                    <img src="./images/CySECLogo.png" alt="Company Logo" class="company-logo">
+                                    <div>
+                                        <h3>CySec Advanced</h3>
+                                        <p class="company-name"><a href="https://www.cysec.gov.cy/en-GB/home/"
+                                                style="color: rgb(32, 45, 233);">CySEC</a> | Sept 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="portfolio-description">
+                                In September of 2023, I achieved a significant milestone by obtaining the CySEC Advanced
+                                Certificate. This certification represents my dedication to mastering advanced concepts
+                                in financial regulation and underscores my commitment to maintaining the high standards
+                                in the financial industry.
+                            </p>
+                        </div>
+                    </div>
+                    <h4>Certificate Number: CN8350</h4>
+                    <div class="skills">
+                        <span>Financial Regulation</span>
+                        <span>AML</span>
+                        <span>Compliance</span>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <div class="portfolio-content">
+                        <div class="portfolio-text">
+                            <div class="portfolio-header">
+
+                                <div class="portfolio-header">
+                                    <img src="./images/cisco.png" alt="Company Logo" class="company-logo">
+                                    <div>
+                                        <h3>CCNA</h3>
+                                        <p class="company-name"><a href="https://www.cisco.com/"
+                                                style="color: rgb(32, 45, 233);">CCNA</a> | June 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="portfolio-description">
+                                In 2022, my dedication to networking culminated in the acquisition of both the CCNA I
+                                Introduction to Networks and CCNA I Switching, Routing, and Wireless Essentials
+                                certificates, marking key achievements in the field.The knowledge gained equips me with
+                                the skills to design, implement, and troubleshoot networks effectively. Beyond the
+                                certificates, my tech passion keeps me up-to-date with the latest in networking.
+                            </p>
+                        </div>
+                    </div>
+                    <h4>Certificate Number: 1015511947</h4>
+                    <div class="skills">
+                        <span>Networking</span>
+                        <span>Routing</span>
+                        <span>Switching</span>
+                    </div>
+                </div>
+            </section>
 
         </div>
+
     </main>
 
     <footer>
