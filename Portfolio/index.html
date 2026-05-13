@@ -164,6 +164,118 @@
             <h2>Projects</h2>
           </div>
 
+          <div class="projects-card k8s-project">
+            <div class="portfolio-content">
+              <div class="portfolio-text">
+                <div class="portfolio-header">
+                  <img
+                    src="./images/k8s_logo.png"
+                    alt="Company Logo"
+                    class="company-logo"
+                  />
+                  <div>
+                    <h3>
+                      <a
+                        href="https://github.com/Tsandas/Microservices-On-Kubernetes"
+                        target="_blank"
+                        style="color: rgb(55, 117, 199)"
+                        >Distributed Kubernetes Monitoring & Microservices
+                        System</a
+                      >
+                    </h3>
+                    <p class="company-name">Feb 2026</p>
+                  </div>
+                </div>
+
+                <p class="portfolio-description">
+                  Designed and deployed a two-cluster Kubernetes environment
+                  running an event-driven microservices application alongside a
+                  centralized observability platform.
+                </p>
+                <p>
+                  The application stack consists of a Flask frontend, Node.js
+                  backend services, Kafka-based event streaming, PostgreSQL
+                  persistence, and Redis caching/counters. Metrics collection
+                  and aggregation were implemented using Prometheus, Thanos, and
+                  Grafana, with AWS S3 used for long-term metrics storage.
+                </p>
+
+                <h4>Cluster 1 — Application & Monitoring</h4>
+                <p>
+                  Role: Runs the application workloads and collects local
+                  infrastructure/application metrics.
+                </p>
+
+                <ul class="portfolio-description">
+                  <li>
+                    3-node Kubernetes cluster (1 control plane, 2 workers)
+                  </li>
+                  <li>Flask frontend and Node.js backend services</li>
+                  <li>
+                    PostgreSQL + PgAdmin for persistence and database management
+                  </li>
+
+                  <li>
+                    Kafka-based event streaming with Node.js worker consumers
+                  </li>
+
+                  <li>Redis for processed events and live counters</li>
+
+                  <li>Prometheus + Thanos Sidecar</li>
+
+                  <li>
+                    Metrics uploaded to AWS S3 every 2 hours for long-term
+                    retention
+                  </li>
+                </ul>
+
+                <h4>Cluster 2 — Central Observability</h4>
+                <p>
+                  Role: Aggregates and serves metrics from all clusters through
+                  a centralized monitoring platform.
+                </p>
+                <ul class="portfolio-description">
+                  <li>Single-node Kubernetes cluster</li>
+                  <li>Thanos Querier federating live metrics via gRPC</li>
+                  <li>Prometheus for self-monitoring</li>
+                  <li>Store Gateway serving historical metrics from S3</li>
+                  <li>Compactor optimizing stored Prometheus blocks</li>
+                  <li>Grafana dashboards connected to Thanos Querier</li>
+                </ul>
+              </div>
+
+              <div class="portfolio-video k8s-media">
+                <video controls preload="metadata">
+                  <source src="./videos/k8s.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <img
+                  src="./images/k8s.png"
+                  alt="Kubernetes observability architecture"
+                  class="expandable-img"
+                />
+              </div>
+            </div>
+
+            <div class="skills">
+              <span>Kubernetes</span>
+              <span>Helm</span>
+              <span>Prometheus</span>
+              <span>Thanos</span>
+              <span>Grafana</span>
+              <span>Kafka</span>
+              <span>PostgreSQL</span>
+              <span>Redis</span>
+              <span>Python</span>
+              <span>Node.js</span>
+              <span>Docker</span>
+              <span>VM</span>
+              <span>AWS S3</span>
+              <span>AWS EKS</span>
+              <span>AWS EC2</span>
+            </div>
+          </div>
+
           <div class="projects-card">
             <div>
               <div class="portfolio-header">
@@ -269,14 +381,6 @@
                   />
                 </div>
 
-                <div class="modal" id="imageModal">
-                  <div class="modal-content">
-                    <button class="modal-close" onclick="closeModal()">
-                      &times;
-                    </button>
-                    <img class="modal-image" id="modalImage" src="" alt="" />
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -447,6 +551,13 @@
       </div>
     </footer>
 
+    <div class="modal" id="imageModal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <img class="modal-image" id="modalImage" src="" alt="" />
+      </div>
+    </div>
+
     <script>
       const expandableImages = document.querySelectorAll(".expandable-img");
       const modal = document.getElementById("imageModal");
@@ -455,6 +566,7 @@
       expandableImages.forEach((img) => {
         img.addEventListener("click", function () {
           modal.classList.add("active");
+          modal.setAttribute("aria-hidden", "false");
           modalImage.src = this.src;
           modalImage.alt = this.alt;
         });
@@ -462,6 +574,7 @@
 
       function closeModal() {
         modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
       }
 
       modal.addEventListener("click", function (event) {
