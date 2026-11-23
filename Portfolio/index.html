@@ -193,6 +193,91 @@
           </div>
 
           <div class="projects-card k8s-project">
+            <div class="portfolio-header">
+              <img
+                src="./images/argus_logo.png"
+                alt="ArgusSRE Logo"
+                class="company-logo"
+              />
+              <div>
+                <h3>
+                  <a
+                    href="https://argussre.com"
+                    target="_blank"
+                    style="color: rgb(55, 117, 199)"
+                    >ArgusSRE: Autonomous SRE &amp; Incident Triage Platform</a
+                  >
+                </h3>
+                <p class="company-name">Master's Thesis | 2026</p>
+              </div>
+            </div>
+
+            <p class="portfolio-description">
+              An AI-powered Site Reliability Engineering platform for Kubernetes
+              that cuts the time engineers spend digging through telemetry
+              during incidents. Delivered as hybrid SaaS: the control plane runs
+              in the cloud, while a lightweight runner inside the customer's
+              cluster connects outbound, so no inbound firewall rules are
+              needed.
+            </p>
+            <ul class="portfolio-description">
+              <li>
+                <strong>Automated alert pipeline:</strong> Alertmanager / Grafana
+                webhooks trigger a background investigation that gathers
+                metrics, logs and cluster state, correlates recent commits and
+                deploys, and produces a Root Cause Analysis report.
+              </li>
+              <li>
+                <strong>Interactive investigation chat:</strong> an
+                incident-anchored chat, in the web app or via @argus in Slack,
+                to query metrics, inspect commits and challenge the agent's
+                hypotheses.
+              </li>
+              <li>
+                <strong>Agent service:</strong> LangChain + LLMs, using tools
+                over MCP: cluster tools, Grafana (mcp-grafana) and external MCP
+                servers like GitHub and Datadog.
+              </li>
+              <li>
+                <strong>Gateway &amp; Runner:</strong> the gateway exposes the
+                cluster's tools as a multi-tenant MCP server; the runner, installed
+                with a public Helm chart, holds a WebSocket to it and runs a fixed
+                set of read-only Kubernetes operations under read-only RBAC.
+              </li>
+              <li>
+                <strong>Web app &amp; Backend:</strong> React SPA and Express API
+                on Vercel, Clerk organizations, PostgreSQL on Neon, credentials
+                encrypted with AES-256-GCM.
+              </li>
+            </ul>
+
+            <div class="k8s-media" style="display: flex">
+              <img
+                src="./images/argus-architecture.png"
+                alt="ArgusSRE architecture"
+                class="expandable-img"
+              />
+            </div>
+
+            <div class="skills">
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>React</span>
+              <span>LangChain</span>
+              <span>MCP</span>
+              <span>Kubernetes</span>
+              <span>Helm</span>
+              <span>WebSocket</span>
+              <span>PostgreSQL</span>
+              <span>Grafana</span>
+              <span>Slack API</span>
+              <span>Docker</span>
+              <span>Vercel</span>
+              <span>Oracle Cloud</span>
+            </div>
+          </div>
+
+          <div class="projects-card k8s-project">
             <div class="portfolio-content">
               <div class="portfolio-text">
                 <div class="portfolio-header">
